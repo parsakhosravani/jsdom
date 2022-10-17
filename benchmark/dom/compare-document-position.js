@@ -7,7 +7,7 @@ exports["compare siblings"] = function () {
 
   return suite({
     setup(document) {
-      parent = document.createElement("div");
+      parent = document.createElement("div"); // contain node element to the div tag
       children = new Array(Math.max(SIBLINGS, this.count));
       if (children.length % 2 === 1) {
         ++children.length; // avoid looking up a .5 index
